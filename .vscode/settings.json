@@ -1,0 +1,15 @@
+{
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_flask_sqlalchemy",
+        "pylint_flask",
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:iotapi}/iot.db",
+            "name": "iot"
+        }
+    ]
+}

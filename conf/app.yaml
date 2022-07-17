@@ -1,0 +1,8 @@
+database:
+  postgres:
+    db: iot_db
+    user: postgres
+    password: admin
+  sqlite:
+    db: iot_db
+    

@@ -1,0 +1,90 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT user.id AS user_id, user.username AS user_username, user.avatar AS user_avatar, user.fullname AS user_fullname, user.role AS user_role, user.status AS user_status, user.company AS user_company, user.profile AS user_profile, user.password AS user_password, user.password_status AS user_password_status, user.authtoken AS user_authtoken, user.email AS user_email, user.phone AS user_phone, user.created_on AS user_created_on 
+FROM user 
+WHERE user.username = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.base.Engine:('jwaser@gmail.com', 1, 0)
+INFO:sqlalchemy.engine.base.Engine:INSERT INTO user_logs (user_id, action_name, action_time) VALUES (?, ?, ?)
+INFO:sqlalchemy.engine.base.Engine:(1, 'LOGIN', '2021-03-11 11:02:40.568170')
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 14:02:40] "POST /login HTTP/1.1" 201 -
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 15:04:47] "OPTIONS //refresh-token HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 15:04:48] "OPTIONS //refresh-token HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 15:04:51] "OPTIONS /login HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT user.id AS user_id, user.username AS user_username, user.avatar AS user_avatar, user.fullname AS user_fullname, user.role AS user_role, user.status AS user_status, user.company AS user_company, user.profile AS user_profile, user.password AS user_password, user.password_status AS user_password_status, user.authtoken AS user_authtoken, user.email AS user_email, user.phone AS user_phone, user.created_on AS user_created_on 
+FROM user 
+WHERE user.username = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.base.Engine:('jwaser@gmail.com', 1, 0)
+INFO:sqlalchemy.engine.base.Engine:INSERT INTO user_logs (user_id, action_name, action_time) VALUES (?, ?, ?)
+INFO:sqlalchemy.engine.base.Engine:(1, 'LOGIN', '2021-03-11 12:04:52.095807')
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 15:04:52] "POST /login HTTP/1.1" 201 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 21:05:19] "OPTIONS //refresh-token HTTP/1.1" 308 -
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 21:05:58] "OPTIONS /login HTTP/1.1" 200 -
+INFO:sqlalchemy.engine.base.Engine:BEGIN (implicit)
+INFO:sqlalchemy.engine.base.Engine:SELECT user.id AS user_id, user.username AS user_username, user.avatar AS user_avatar, user.fullname AS user_fullname, user.role AS user_role, user.status AS user_status, user.company AS user_company, user.profile AS user_profile, user.password AS user_password, user.password_status AS user_password_status, user.authtoken AS user_authtoken, user.email AS user_email, user.phone AS user_phone, user.created_on AS user_created_on 
+FROM user 
+WHERE user.username = ?
+ LIMIT ? OFFSET ?
+INFO:sqlalchemy.engine.base.Engine:('jwaser@gmail.com', 1, 0)
+INFO:sqlalchemy.engine.base.Engine:INSERT INTO user_logs (user_id, action_name, action_time) VALUES (?, ?, ?)
+INFO:sqlalchemy.engine.base.Engine:(1, 'LOGIN', '2021-03-11 18:05:58.933683')
+INFO:sqlalchemy.engine.base.Engine:COMMIT
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 21:05:58] "POST /login HTTP/1.1" 201 -
+INFO:werkzeug: * Detected change in 'D:\\dev\\python\\iotapi\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 21:07:27] "OPTIONS /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 21:07:29] "OPTIONS /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [11/Mar/2021 21:35:58] "OPTIONS //refresh-token HTTP/1.1" 308 -
+INFO:werkzeug: * Detected change in 'D:\\dev\\python\\iotapi\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\dev\\python\\iotapi\\services\\deviceservice.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [12/Mar/2021 09:43:16] "POST /device/log HTTP/1.1" 404 -
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\dev\\python\\iotapi\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\dev\\python\\iotapi\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 294-543-563
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Detected change in 'D:\\dev\\python\\iotapi\\app.py', reloading
+INFO:werkzeug: * Restarting with stat

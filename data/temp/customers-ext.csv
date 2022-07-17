@@ -1,0 +1,17 @@
+customers,ten_id,customer_name,customer_type,address,location,country,primary_phone,secondary_phone,email,tax_no,account1,account2
+CUS-2021-03-25,1,Abraham Hebrew,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885514,25677885514,abraham.hebrew@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Sarah Abraham,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885541,25677885541,sarah.abraham@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Mordecai Mod,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885542,25677885542,mordecai.mod@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Esther Queen,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885543,25677885543,esther.queen@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Jacob Israel,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885545,25677885545,jacob.israel@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,David King,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885546,25677885546,david.king@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Solomon King,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885114,,solomon.king@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Saul Kush,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885241,,saul.kush@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Judah Israel,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885342,,judah.israel@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Isaiah Uziah,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885443,,isaiah.uziah@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Joshua Nun,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885645,,joshua.nun@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Simon Peter,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885746,,simon.peter@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Saul Paul,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885814,,saul.paul@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Mary Magdalene,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677885941,,mary.magdalene@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Mary Suzzana,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677881542,,mary.suzzana@iotex.com,,SAVINGS,DEVICE
+CUS-2021-03-25,1,Hana Elkana,INDIVIDUAL,Kawuku Entebbe Rd,"[0,15]",UG,25677882543,,hana.elkana@iotex.com,,SAVINGS,DEVICE

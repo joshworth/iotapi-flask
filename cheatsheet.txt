@@ -1,0 +1,115 @@
+psql:
+1. Connect $ psql -d postgres -U postgres
+2. List db and conncect
+    # \l 
+    # \c iot_db
+3. List tables
+    # \dt
+4. List roles, users
+    # \dg
+
+
+
+
+Informational
+  (options: S = show system objects, + = additional detail)
+  \d[S+]                 list tables, views, and sequences
+  \d[S+]  NAME           describe table, view, sequence, or index
+  \da[S]  [PATTERN]      list aggregates
+  \dA[+]  [PATTERN]      list access methods
+  \db[+]  [PATTERN]      list tablespaces
+  \dc[S+] [PATTERN]      list conversions
+  \dC[+]  [PATTERN]      list casts
+  \dd[S]  [PATTERN]      show object descriptions not displayed elsewhere
+  \dD[S+] [PATTERN]      list domains
+  \ddp    [PATTERN]      list default privileges
+  \dE[S+] [PATTERN]      list foreign tables
+  \det[+] [PATTERN]      list foreign tables
+  \des[+] [PATTERN]      list foreign servers
+  \deu[+] [PATTERN]      list user mappings
+  \dew[+] [PATTERN]      list foreign-data wrappers
+  \df[anptw][S+] [PATRN] list [only agg/normal/procedures/trigger/window] functions
+  \dF[+]  [PATTERN]      list text search configurations
+  \dFd[+] [PATTERN]      list text search dictionaries
+  \dFp[+] [PATTERN]      list text search parsers
+  \dFt[+] [PATTERN]      list text search templates
+  \dg[S+] [PATTERN]      list roles
+  \di[S+] [PATTERN]      list indexes
+  \dl                    list large objects, same as \lo_list
+  \dL[S+] [PATTERN]      list procedural languages
+  \dm[S+] [PATTERN]      list materialized views
+  \dn[S+] [PATTERN]      list schemas
+  \do[S]  [PATTERN]      list operators
+  \dO[S+] [PATTERN]      list collations
+  \dp     [PATTERN]      list table, view, and sequence access privileges
+  \dP[itn+] [PATTERN]    list [only index/table] partitioned relations [n=nested]
+  \drds [PATRN1 [PATRN2]] list per-database role settings
+  \dRp[+] [PATTERN]      list replication publications
+  \dRs[+] [PATTERN]      list replication subscriptions
+  \ds[S+] [PATTERN]      list sequences
+  \dt[S+] [PATTERN]      list tables
+  \dT[S+] [PATTERN]      list data types
+  \du[S+] [PATTERN]      list roles
+  \dv[S+] [PATTERN]      list views
+  \dx[+]  [PATTERN]      list extensions
+  \dy     [PATTERN]      list event triggers
+  \l[+]   [PATTERN]      list databases
+  \sf[+]  FUNCNAME       show a function's definition
+  \sv[+]  VIEWNAME       show a view's definition
+  \z      [PATTERN]      same as \dp
+
+
+
+sqlite:
+===========
+$ sqlite3 mydata.db
+$ sqlite3 -line mydata.db 'select * from memos where priority > 20;'
+
+sqlite> .help
+
+.databases             List names and files of attached databases
+.dump ?TABLE? ...      Dump the database in an SQL text format
+.echo ON|OFF           Turn command echo on or off
+.exit                  Exit this program
+.explain ON|OFF        Turn output mode suitable for EXPLAIN on or off.
+.header(s) ON|OFF      Turn display of headers on or off
+.help                  Show this message
+.import FILE TABLE     Import data from FILE into TABLE
+.indices TABLE         Show names of all indices on TABLE
+.mode MODE ?TABLE?     Set output mode where MODE is one of:
+                         csv      Comma-separated values
+                         column   Left-aligned columns.  (See .width)
+                         html     HTML <table> code
+                         insert   SQL insert statements for TABLE
+                         line     One value per line
+                         list     Values delimited by .separator string
+                         tabs     Tab-separated values
+                         tcl      TCL list elements
+.nullvalue STRING      Print STRING in place of NULL values
+.output FILENAME       Send output to FILENAME
+.output stdout         Send output to the screen
+.prompt MAIN CONTINUE  Replace the standard prompts
+.quit                  Exit this program
+.read FILENAME         Execute SQL in FILENAME
+.schema ?TABLE?        Show the CREATE statements
+.separator STRING      Change separator used by output mode and .import
+.show                  Show the current values for various settings
+.tables ?PATTERN?      List names of tables matching a LIKE pattern
+.timeout MS            Try opening locked tables for MS milliseconds
+.width NUM NUM ...     Set column widths for "column" mode
+sqlite>
+
+
+--migrate data from lite to psql
+dump from lite to csv, then import from psql, maintain the column count in the csv as in the query
+
+$sqlite3 iot.db
+    # .headers on
+    # .output filename
+    # select device_name,device_type,barcode,created_on from device;
+
+$psql
+    # \COPY dtube(device_name,device_type,barcode,created_on) from '/home/ubuntu/ngroot/iotapi/qqq1.txt' delimiter '|' csv header;
+
+--inline execution
+$ sqlite3 -line bak1.db 'select * from device where id > 5; select id,barcode,created_on from dtube;'

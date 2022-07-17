@@ -1,0 +1,16 @@
+orm:
+  indent_width: 3
+  template_file: models.csv
+  crud_path: code/crud  
+  models_path: code/models
+  schemas_path: code/schemas
+  tests_path: code/tests
+  service_path: code/service
+orm_prod:
+  indent_width: 3
+  template_file: models.csv
+  crud_path: ../app/app/crud  
+  models_path: ../app/app/models
+  schemas_path: ../app/app/schemas
+  tests_path: ../app/app/tests/crud
+  service_path: code/tests  
